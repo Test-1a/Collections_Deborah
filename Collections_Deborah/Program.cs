@@ -44,7 +44,8 @@ namespace Collections_Deborah
     // --------- Ch.4 Generics -----------------
 
     //public class OperationResult<T, V>
-    public class OperationResult<T, V>
+    //public class OperationResult<T, V>
+ /*   public class OperationResult<T, V>
     {
         public OperationResult()
         {
@@ -61,5 +62,8 @@ namespace Collections_Deborah
 
     }
 
+    var operationResult = new OperationResult<bool>(success, orderText);
+    var operationsResult = new OperationsResult<decimal>(ValueTuple, orderText);  */
+    
     // -----------------------------------------
 }
