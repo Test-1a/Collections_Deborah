@@ -38,10 +38,28 @@ namespace Collections_Deborah
                 Console.WriteLine($"The color is {color}");
             }
             // -----------------------------------------
-
-
-
-
         }
     }
+
+    // --------- Ch.4 Generics -----------------
+
+    //public class OperationResult<T, V>
+    public class OperationResult<T, V>
+    {
+        public OperationResult()
+        {
+        }
+
+        public OperationResult(T result, V message) : this()
+        {
+            Result = result;
+            Message = message;
+        }
+
+        public T Result { get; set; }
+        public V Message { get; set; }
+
+    }
+
+    // -----------------------------------------
 }
