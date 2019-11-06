@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;   //List<T>
 
 namespace Collections_Deborah
 {
@@ -38,6 +39,52 @@ namespace Collections_Deborah
                 Console.WriteLine($"The color is {color}");
             }
             // -----------------------------------------
+
+
+            // -------------- Ch. 5 Generic Lists ---------------
+
+            //using System.Collections.Generic;
+            List<string> colorOptions2 = new List<string>();  //List declaration, initialization and 
+                                                              //implicit typing
+
+            ////Adding elements to the List
+            //colorOptions2.Add("Red");
+            //colorOptions2.Add("Espresso");
+            //colorOptions2.Add("White");
+            //colorOptions2.Add("Navy");
+
+            //Console.WriteLine();
+            //foreach (var item in colorOptions2)
+            //{
+            //    Console.WriteLine($"Item: {item}");
+            //}
+
+            //colorOptions2.Insert(2, "Purple");
+
+            //Console.WriteLine();
+            //foreach (var item in colorOptions2)
+            //{
+            //    Console.WriteLine($"Item: {item}");
+            //}
+
+            //colorOptions2.Remove("White");
+
+            //Console.WriteLine();
+            //foreach (var item in colorOptions2)
+            //{
+            //    Console.WriteLine($"Item: {item}");
+            //}
+
+            //Collection Initializers
+            var colorOp = new List<string>() { "Red", "Espresso", "White", "Navy" };
+
+            Console.WriteLine();
+            for (int i = 0; i < colorOp.Count; i++)
+            {
+                Console.WriteLine($"{i}: {colorOp[i]}");
+            }
+
+            // --------------------------------------------------
         }
     }
 
@@ -45,25 +92,33 @@ namespace Collections_Deborah
 
     //public class OperationResult<T, V>
     //public class OperationResult<T, V>
- /*   public class OperationResult<T, V>
-    {
-        public OperationResult()
-        {
-        }
+    /*   public class OperationResult<T, V>
+       {
+           public OperationResult()
+           {
+           }
 
-        public OperationResult(T result, V message) : this()
-        {
-            Result = result;
-            Message = message;
-        }
+           public OperationResult(T result, V message) : this()
+           {
+               Result = result;
+               Message = message;
+           }
 
-        public T Result { get; set; }
-        public V Message { get; set; }
+           public T Result { get; set; }
+           public V Message { get; set; }
 
-    }
+       }
 
-    var operationResult = new OperationResult<bool>(success, orderText);
-    var operationsResult = new OperationsResult<decimal>(ValueTuple, orderText);  */
-    
+       var operationResult = new OperationResult<bool>(success, orderText);
+       var operationsResult = new OperationsResult<decimal>(ValueTuple, orderText);  */
+
     // -----------------------------------------
+
+   
+
+
+
+    
+
+    
 }
